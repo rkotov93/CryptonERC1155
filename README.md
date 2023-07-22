@@ -1,11 +1,8 @@
 # ECR1155 Token
 
-Contract address is [0x9A2c1403893abBF8C92D076869259076623856Ce](https://mumbai.polygonscan.com/address/0x9A2c1403893abBF8C92D076869259076623856Ce)
+Contract address if [0x4fAc5CD9b4c7e8278Bcb5040fA1CA466be026f0b](https://mumbai.polygonscan.com/address/0x4fAc5CD9b4c7e8278Bcb5040fA1CA466be026f0b)
 
-Minted NFT at [OpenSea Testnet](https://testnets.opensea.io/assets/mumbai/0x9a2c1403893abbf8c92d076869259076623856ce/1)
-
-<img width="348" alt="Screenshot 2023-07-23 at 00 58 37" src="https://github.com/rkotov93/CryptonERC1155/assets/640137/e1d10f98-3f4f-46de-9467-15d2d0fe66e8">
-
+Minted NFT at [OpenSea Testnet](https://testnets.opensea.io/assets/mumbai/0x4fac5cd9b4c7e8278bcb5040fa1ca466be026f0b/1)
 
 ## Installation
 

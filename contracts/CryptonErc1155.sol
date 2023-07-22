@@ -10,6 +10,7 @@ contract CryptonErc1155 is ERC1155URIStorage, Ownable {
 
   event CertificateIssued(address student, uint256 certificateId);
 
+  string public constant name = "Crypton Course ERC1155";
   uint8 public constant COIN = 0;
   Counters.Counter public certificateTokenIds;
   string public certificateMetadataUri;
