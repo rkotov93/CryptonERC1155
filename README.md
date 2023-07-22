@@ -17,9 +17,9 @@ yarn install
 
 ## Deployment
 
-Fill in all the required environment variables(copy .env-example to .env and fill it).
+Fill in all the required environment variables(copy .env.example to .env and fill it).
 
-Deploy contract to the chain (mumbai testnet):
+Deploy contract to the selected network with following command:
 
 ```bash
 npx hardhat run scripts/deploy.ts --network <localhost|mumbai>
