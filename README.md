@@ -1,6 +1,7 @@
 # ECR1155 Token
 
-Contract address if [0x9A2c1403893abBF8C92D076869259076623856Ce](https://mumbai.polygonscan.com/address/0x9A2c1403893abBF8C92D076869259076623856Ce)
+Contract address is [0x9A2c1403893abBF8C92D076869259076623856Ce](https://mumbai.polygonscan.com/address/0x9A2c1403893abBF8C92D076869259076623856Ce)
+
 Minted NFT at [OpenSea Testnet](https://testnets.opensea.io/assets/mumbai/0x9a2c1403893abbf8c92d076869259076623856ce/1)
 
 ## Installation
