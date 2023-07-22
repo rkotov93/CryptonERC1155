@@ -4,6 +4,9 @@ Contract address is [0x9A2c1403893abBF8C92D076869259076623856Ce](https://mumbai.
 
 Minted NFT at [OpenSea Testnet](https://testnets.opensea.io/assets/mumbai/0x9a2c1403893abbf8c92d076869259076623856ce/1)
 
+<img width="348" alt="Screenshot 2023-07-23 at 00 58 37" src="https://github.com/rkotov93/CryptonERC1155/assets/640137/e1d10f98-3f4f-46de-9467-15d2d0fe66e8">
+
+
 ## Installation
 
 Clone the repository using the following command:
