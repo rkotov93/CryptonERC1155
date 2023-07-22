@@ -13,14 +13,16 @@ contract CryptonErc1155 is ERC1155URIStorage, Ownable {
   string public certificateMetadataUri;
 
   constructor(string memory _certificateMetadataUri) ERC1155("") {
-    _mint(msg.sender, COIN, 10**18, "");
+    _mint(msg.sender, COIN, 10**19, "");
     certificateMetadataUri = _certificateMetadataUri;
+    certificateTokenIds.increment();
   }
 
   // It's better use soulboud tokens here of course
   function issueCertificate(address to) external onlyOwner {
-    uint tokenId = certificateTokenIds.current() + 1;
+    uint tokenId = certificateTokenIds.current();
     _mint(to, tokenId, 1, "");
     _setURI(tokenId, certificateMetadataUri);
+    certificateTokenIds.increment();
   }
 }
