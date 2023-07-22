@@ -27,18 +27,14 @@ const config: HardhatUserConfig = {
       accounts: {
         mnemonic: process.env.MNEMONIC,
       },
-      forking: {
-        url: <string>process.env.GOERLI_RPC_URI,
-        blockNumber: 9317394,
-      },
       chainId: 31337,
     },
-    goerli: {
-      url: <string>process.env.GOERLI_RPC_URI,
+    mumbai: {
+      url: <string>process.env.MUMBAI_RPC_URI,
       accounts: {
         mnemonic: process.env.MNEMONIC,
       },
-      chainId: 5,
+      chainId: 80001,
     },
   },
   etherscan: {
