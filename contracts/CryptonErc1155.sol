@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract CryptonErc1155 is ERC1155URIStorage, Ownable {
   using Counters for Counters.Counter;
 
+  event CertificateIssued(address student, uint256 certificateId);
+
   uint8 public constant COIN = 0;
   Counters.Counter public certificateTokenIds;
   string public certificateMetadataUri;
@@ -24,5 +26,6 @@ contract CryptonErc1155 is ERC1155URIStorage, Ownable {
     _mint(to, tokenId, 1, "");
     _setURI(tokenId, certificateMetadataUri);
     certificateTokenIds.increment();
+    emit CertificateIssued(to, tokenId);
   }
 }

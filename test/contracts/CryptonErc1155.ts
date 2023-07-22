@@ -36,19 +36,23 @@ describe("CryptonErc1155", () => {
     before(async () => {
       recipient1 = accounts[1];
       recipient2 = accounts[2];
-      await cryptonErc1155.issueCertificate(recipient1.address);
-      await cryptonErc1155.issueCertificate(recipient2.address);
     });
 
     it("issues a certificate for a provided address", async () => {
+      await expect(cryptonErc1155.issueCertificate(recipient1.address))
+        .to.emit(cryptonErc1155, "CertificateIssued")
+        .withArgs(recipient1.address, 1);
       const recipient1Balance = await cryptonErc1155.balanceOf(recipient1.address, 1);
       const certificate1Uri = await cryptonErc1155.uri(1);
       expect(recipient1Balance).to.be.eq(1);
       expect(certificate1Uri).to.be.eq(expectedCertificateMetadataUri);
 
-      let recipient2Balance = await cryptonErc1155.balanceOf(recipient1.address, 2);
+      await expect(cryptonErc1155.issueCertificate(recipient2.address))
+        .to.emit(cryptonErc1155, "CertificateIssued")
+        .withArgs(recipient2.address, 2);
+      let recipient2Balance = await cryptonErc1155.balanceOf(recipient2.address, 2);
       const certificate2Uri = await cryptonErc1155.uri(1);
-      expect(recipient1Balance).to.be.eq(1);
+      expect(recipient2Balance).to.be.eq(1);
       expect(certificate2Uri).to.be.eq(expectedCertificateMetadataUri);
     });
   });
